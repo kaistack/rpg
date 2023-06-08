@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="col-3">
+            <header>
+                <h1>Password Generator</h1>
+               
+            </header>
+            <section class="passwordGenerator">
+            <section class="password">
+                <p id="passwordBox"></p>
+                <i class="fa fa-copy" onclick="copyPassword()"></i>
+            </section>
+            <section>
+                <label for="length">Length (4 - 64)</label>
+                <input class="number" type="number" id="length" min="4" max="64" value="6">
+            </section>
+            <section>
+                <label for="symbol">Special Characters</label>
+                <input class="checkbox" type="checkbox" id="symbol" checked>
+            </section>
+            <section>
+                <label for="number">Number</label>
+                <input class="checkbox" type="checkbox" id="number" checked>
+            </section>
+            <section>
+                <label for="lowerCase">LowerCase</label>
+                <input class="checkbox" type="checkbox" id="lowerCase" checked>
+            </section>
+            <section>
+                <label for="upperCase">UpperCase</label>
+                <input class="checkbox" type="checkbox" id="upperCase" checked>
+            </section>
+            <button onclick="createPassword()">Generate password</button>
+        </section>
+    </div>
+<script src="scripts/app.js"></script>
+</body>
+</html>

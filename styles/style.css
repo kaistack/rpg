@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(circle, #2beeaa, #aab449);
+}
+
+.col-3 {
+    background-color: white;
+    border: 1px solid #cecece;
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px #000;
+    margin: 3vw auto;
+    
+}
+
+/* header */
+header {
+    border-bottom: 2px solid #cecece;
+    text-align: center;
+}
+
+h1 {
+    background-image: linear-gradient(to left, #2beeaa, #3c839a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* password generator */
+.passwordGenerator {
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    background-image: linear-gradient(to left, #2beeaa, #3c839a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+  
+.passwordGenerator section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.password {
+    background-image: radial-gradient(circle, #2beeaa, #3c839a);
+    border: 3px solid #bbb;
+    color: #fff;
+}
+  
+.password p {
+    width: 85%;
+    height: 18vh;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 5px;
+    overflow-wrap: break-word;
+}
+  
+.password i {
+    font-size: 1em;
+    padding: 6px 5px;
+}
+
+.number {
+    max-width: 4vw;
+}
+
+.checkbox {
+    /* change color of checkbox */
+    accent-color: #3c839a;
+}
+  
+.passwordGenerator button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 0.8em;
+    background-image: radial-gradient(circle, #2beeaa, #3c839a);
+    padding: 10px;
+}
+
+
+/* for Twitter, GitHub icon */
+.link {
+    font-size: 1rem;
+}
+
+.fa {
+	padding-left: 10px;
+    font-size: 1rem;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.fa-github {
+	color: #000000;
+    text-shadow: 2px 2px 4px #000;
+}
+
+span {
+    text-shadow: none;
+    color: #bbbbbb;
+    padding-left: 3px;
+}
+
+
+/* Some media queries for responsiveness */
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .fa {
+	font-size: 1rem;
+  }
+
+  .number {
+    max-width: 12vw;
+  }
+}
+
+
+
+/* tablets, netbooks */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .number {
+        max-width: 6vw;
+    }
+}
